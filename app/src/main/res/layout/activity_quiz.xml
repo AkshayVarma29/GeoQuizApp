@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_quiz"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.example.thinkwizardx.geoquiz.QuizActivity">
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:gravity="center"
+        android:padding="30dp"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/hori_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/true_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/true_button"
+            android:textColor="#fff"
+            tools:ignore="ButtonStyle"/>
+
+        <Button
+            android:id="@+id/false_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/false_button"
+            android:textColor="#fff"
+            tools:ignore="ButtonStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.4"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/arrow_right"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/next"
+            android:textColor="#000"
+            tools:ignore="RtlHardcoded,RtlSymmetry"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cheat_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cheat_button"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/reset"
+            android:textColor="#fff"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
